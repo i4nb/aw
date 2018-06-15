@@ -1,9 +1,18 @@
 language: node_js
 node_js:
-  - "node"
-dist: trusty
+  - "0.10"
 install:
-  - npm i -g npm@5.7.1 # this should be deleted once 5.7.X is out of "pre-release"
-  - npm ci             # instead of default npm install 
-scripts:
-  # run tests, build, ...
+  - npm install phantomjs -g
+  - npm install -g mocha-phantomjs
+  - npm install -g gulp
+  - npm install -g bower
+  - npm install
+  - bower install
+before_script:
+  - phantomjs --version
+  - mocha-phantomjs --version
+  - gulp &
+  - sleep 5 # give gulp background task some time to execute.
+script:
+  - mocha-phantomjs out/test/index.html
+  - make test
