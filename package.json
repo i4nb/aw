@@ -1,0 +1,22 @@
+{
+  "name": "aw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i4nb/aw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i4nb/aw/issues"
+  },
+  "homepage": "https://github.com/i4nb/aw#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
