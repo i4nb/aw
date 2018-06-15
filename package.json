@@ -16,7 +16,8 @@
     "url": "https://github.com/i4nb/aw/issues"
   },
   "homepage": "https://github.com/i4nb/aw#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "mocha": "^5.2.0"
   }
 }
