@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "8.11.1"
+install:
+  - npm install phantomjs 
+  - npm install mocha-phantomjs
+  - npm install gulp
+  - npm install
+before_script:
+  - phantomjs --version
+  - mocha-phantomjs --version
+  - gulp test
+script:
+  - gulp test
